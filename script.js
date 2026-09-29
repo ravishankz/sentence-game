@@ -470,14 +470,14 @@ function loadQuestion(){
 
 
                 dx:
-                (Math.random()*2+1)
+                (Math.random()*0.4+0.1)
                 *
                 (Math.random()<0.5?-1:1),
 
 
 
                 dy:
-                (Math.random()*2+1)
+                (Math.random()*0.4+0.1)
                 *
                 (Math.random()<0.5?-1:1),
 
