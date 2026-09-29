@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arrange the Sentence</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="game-container">
+
+
+
+    <!-- Start Screen -->
+
+    <div id="startScreen" class="screen active">
+
+
+        <h1>📝 Arrange the Sentence</h1>
+
+
+        <p>
+            Arrange the moving words to create a correct sentence.
+        </p>
+
+
+        <button id="startBtn" class="primary-btn">
+
+            Start Game
+
+        </button>
+
+
+    </div>
+
+
+
+
+
+    <!-- Game Screen -->
+
+
+    <div id="gameScreen" class="screen">
+
+
+        <header>
+
+
+            <h1>
+                Arrange the Sentence
+            </h1>
+
+
+
+            <div class="info-panel">
+
+
+                <div>
+
+                    Question
+                    <span id="questionNumber">
+                        1
+                    </span>/10
+
+                </div>
+
+
+
+                <div>
+
+                    Score:
+                    <span id="score">
+                        0
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="progress-container">
+
+
+                <div id="progressBar"></div>
+
+
+            </div>
+
+
+
+
+
+            <!-- Question Navigator -->
+
+            <div 
+            id="questionNavigator"
+            class="question-navigator">
+
+
+            </div>
+
+
+
+        </header>
+
+
+
+
+
+        <div class="instruction">
+
+
+            Drag the floating words into the sentence box.
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Word Bank -->
+
+
+        <div id="wordBank" class="word-bank">
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Answer Area -->
+
+
+        <div class="sentence-area">
+
+
+            <h3>
+                Your Sentence
+            </h3>
+
+
+
+            <div id="answerBox" class="answer-box">
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Controls -->
+
+
+        <div class="controls">
+
+
+    <button 
+    id="checkBtn"
+    class="success-btn">
+
+        Check Answer
+
+    </button>
+
+
+    <button 
+    id="resetBtn"
+    class="warning-btn">
+
+        Reset
+
+    </button>
+
+
+    <button 
+    id="nextBtn"
+    class="next-btn">
+
+        Next
+
+    </button>
+
+
+    <button 
+    id="finishBtn"
+    class="finish-btn">
+
+        Finish
+
+    </button>
+
+
+</div>
+
+
+
+
+
+
+
+        <div 
+        id="feedback"
+        class="feedback">
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Result Screen -->
+
+
+    <div id="resultScreen" class="screen">
+
+
+        <h1>
+            🎉 Great Job!
+        </h1>
+
+
+
+        <p>
+            You completed all sentences.
+        </p>
+
+
+
+
+        <div class="final-score">
+
+
+            Score:
+
+            <span id="finalScore">
+                0
+            </span>
+
+            /10
+
+
+        </div>
+
+
+
+
+        <button 
+        id="restartBtn"
+        class="primary-btn">
+
+
+            Play Again
+
+
+        </button>
+
+
+
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
