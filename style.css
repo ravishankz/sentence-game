@@ -749,3 +749,281 @@ button:disabled{
     background:#e63946;
 
 }
+
+/* Reference Image */
+
+
+.image-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:15px 0;
+
+}
+
+
+
+#referenceImage{
+
+    width:320px;
+
+    height:520px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.2);
+
+    transition:.3s;
+
+}
+
+
+
+#referenceImage:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+/* Image Popup */
+
+
+.image-modal{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:1000;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+    rgba(0,0,0,0.75);
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.image-modal.active{
+
+    display:flex;
+
+}
+
+
+
+#largeImage{
+
+    max-width:90%;
+
+    max-height:85%;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+
+
+.close-image{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#e63946;
+
+    color:white;
+
+    font-size:30px;
+
+    line-height:35px;
+
+    padding:0;
+
+}
+
+
+
+
+
+
+@media(max-width:768px){
+
+
+    #referenceImage{
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+
+    #largeImage{
+
+        max-width:95%;
+
+        max-height:80%;
+
+    }
+
+
+}
+
+/* Main Layout */
+
+
+.game-layout{
+
+    width:100%;
+
+    max-width:1400px;
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:flex-start;
+
+}
+
+
+
+
+
+/* Left Image Panel */
+
+
+.reference-panel{
+
+    width:280px;
+
+    display:flex;
+
+    justify-content:center;
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+
+
+
+#referenceImage{
+
+    width:260px;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.2);
+
+    transition:.3s;
+
+}
+
+
+
+#referenceImage:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+
+
+/* Game Area */
+
+
+.game-container{
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:1000px){
+
+
+    .game-layout{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+
+    .reference-panel{
+
+        position:relative;
+
+        width:100%;
+
+    }
+
+
+
+    #referenceImage{
+
+        width:180px;
+
+        height:280px;
+
+    }
+
+
+}

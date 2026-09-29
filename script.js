@@ -154,9 +154,58 @@ document.getElementById("finishBtn");
 const navigatorBox =
 document.getElementById("questionNavigator");
 
+const referenceImage =
+document.getElementById("referenceImage");
+
+
+const imageModal =
+document.getElementById("imageModal");
+
+
+const closeImage =
+document.getElementById("closeImage");
 
 
 
+referenceImage.onclick=function(){
+
+    imageModal.classList.add("active");
+
+};
+
+
+
+closeImage.onclick=function(){
+
+    imageModal.classList.remove("active");
+
+};
+
+
+
+imageModal.onclick=function(e){
+
+    if(e.target === imageModal){
+
+        imageModal.classList.remove("active");
+
+    }
+
+};
+
+
+
+document.addEventListener(
+"keydown",
+function(e){
+
+    if(e.key==="Escape"){
+
+        imageModal.classList.remove("active");
+
+    }
+
+});
 
 
 document
